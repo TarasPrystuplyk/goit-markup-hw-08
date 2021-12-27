@@ -28,6 +28,17 @@
   padding: 0 15px;
   align-items: baseline;
   /* для вирівнювання з лого */
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 }
 
 .header__main-nav {
@@ -43,6 +54,17 @@
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #212121;
+  }
 }
 
 span {
@@ -74,7 +96,13 @@ span {
 
 .header__site-nav {
   display: flex;
-  margin-left: 93px;
+  // margin-left: 93px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+    display: flex;
+  }
 }
 
 .header__site-nav .header__link {
@@ -130,6 +158,14 @@ span {
   list-style: none;
   display: flex;
   margin-left: auto;
+
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    align-items: center;
+    // vertical-align: -21px;
+  }
 }
 
 .site-contact .item + .item {
@@ -140,6 +176,12 @@ span {
 .site-contact__item {
   margin-left: 50px;
   margin-right: 0;
+
+  @media screen and (min-width: 768px) {
+    // margin-top: 21px;
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
 }
 
 // .site-contact__link:hover,
@@ -177,6 +219,19 @@ span {
       fill: var(--accent-color);
     }
   }
+
+  @media screen and (min-width: 768px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
 }
 
 .site-contact__svg {
@@ -212,4 +267,17 @@ span {
   &:focus {
     fill: #2196f3;
   }
+}
+
+.open-menu-btn {
+  margin-left: auto;
+}
+
+.mob-menu {
+  position: fixed;
+  // background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 5;
 }
