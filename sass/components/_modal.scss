@@ -25,6 +25,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 }
 
 .modal__modal-close {
@@ -237,6 +241,18 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+
+  @media screen and (min-width: 480px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    display: inline-block;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+  }
 }
 
 .modal-check-text .check-span {
