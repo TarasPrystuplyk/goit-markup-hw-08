@@ -10,6 +10,10 @@
   // //   padding-top: 60px;
   // //   padding-bottom: 0px;
   // // }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container-client {
@@ -61,13 +65,23 @@
     margin-bottom: 30px;
     color: #212121;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
   display: flex;
   // justify-content: center;
   // list-style: none;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   margin-right: -30px;
 
   /* padding-left: 30px; */

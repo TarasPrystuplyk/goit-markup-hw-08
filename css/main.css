@@ -596,7 +596,6 @@ span {
 
 @media screen and (max-width: 767px) {
   .hero {
-    max-width: 480px;
     height: 400px;
     text-align: center;
     padding-top: 118px;
@@ -623,7 +622,7 @@ span {
     text-align: center;
     background: var(--hero-bkg-color);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-tab-img1x.jpg);
-    width: 768px;
+    max-width: 768px;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -647,7 +646,7 @@ span {
     text-align: center;
     background: var(--hero-bkg-color);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-desk-img1x.jpg);
-    width: 1200px;
+    max-width: 1600px;
     height: 600px;
     background-size: cover;
     background-position: center;
@@ -724,14 +723,14 @@ span {
 @media screen and (min-width: 480px) {
   .section-features {
     padding-top: 60px;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-features {
     padding-top: 94px;
-    padding-bottom: 0px;
+    padding-bottom: 94px;
   }
 }
 
@@ -904,6 +903,19 @@ span {
 .section-about {
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-about {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-about {
+    padding-top: 0;
+  }
 }
 
 .section-about__title {
@@ -979,7 +991,14 @@ span {
 @media screen and (min-width: 480px) {
   .team-section {
     padding-top: 60px;
-    padding-bottom: 53px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1206,6 +1225,13 @@ span {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .container-client {
   padding-left: 15px;
   padding-right: 15px;
@@ -1263,9 +1289,20 @@ span {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section-client__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+  }
+}
+
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
   margin-right: -30px;
   /* padding-left: 30px; */
 }
