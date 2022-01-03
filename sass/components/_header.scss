@@ -13,7 +13,7 @@
 
   @media screen and (min-width: 480px) {
     padding-top: 60px;
-    padding-bottom: 0;
+    padding-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -86,7 +86,7 @@
   @media screen and (max-width: 767px) {
     display: flex;
     text-align: center;
-    // justify-content: center;
+    justify-content: center;
     margin: 0 auto;
     padding: 0 15px;
     width: 100%;
