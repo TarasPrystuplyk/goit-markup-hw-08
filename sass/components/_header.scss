@@ -1,5 +1,9 @@
 .header {
   border-bottom: 1px solid #ececec;
+
+  @media screen and (max-width: 479px) {
+    min-width: 320px;
+  }
 }
 
 .section {
@@ -23,7 +27,7 @@
 }
 
 .container {
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -38,6 +42,10 @@
   padding: 0 15px;
   align-items: baseline;
   /* для вирівнювання з лого */
+
+  @media screen and (max-width: 479px) {
+    min-width: 320px;
+  }
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -88,6 +96,7 @@
 .header__main-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 
   @media screen and (min-width: 480px) {
     // padding-top: 16px;
@@ -368,7 +377,10 @@ span {
 
 .open-menu-btn {
   // display: flex;
-  margin-left: auto;
+  margin-left: 0;
+  border: 0;
+  border-color: #fff;
+  background-color: #fff;
   @media screen and (min-width: 480px) {
     margin-left: 0;
     padding: 0;

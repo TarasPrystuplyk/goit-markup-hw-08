@@ -13,7 +13,7 @@
 }
 
 .container-client {
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -23,6 +23,10 @@
   // padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 479px) {
+    min-width: 320px;
+  }
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -60,11 +64,11 @@
 }
 
 .clients-list {
-  // display: flex;
+  display: flex;
   // justify-content: center;
   // list-style: none;
-  // flex-wrap: wrap;
-  // margin-right: -30px;
+  flex-wrap: wrap;
+  margin-right: -30px;
 
   /* padding-left: 30px; */
 
@@ -72,6 +76,7 @@
     margin: -15px;
     display: flex;
     flex-wrap: wrap;
+    min-width: 320px;
   }
 
   @media screen and (max-width: 1199px) {
@@ -93,6 +98,11 @@
   border-radius: 4px; */
   // display: block;
   list-style: none;
+
+  @media screen and (max-width: 479px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 
   @media screen and (min-width: 480px) {
     width: calc((100% - 2 * 30px) / 2);
