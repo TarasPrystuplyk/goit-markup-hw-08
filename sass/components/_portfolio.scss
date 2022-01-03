@@ -8,7 +8,7 @@
 }
 
 .project-list .filter-item {
-  flex-basis: calc(100% / 3 - 30px);
+  // flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
 }
@@ -80,4 +80,7 @@
 .project-content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  text-align: left;
 }
+
+// Footer
