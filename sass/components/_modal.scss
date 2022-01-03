@@ -6,11 +6,13 @@
   top: 0;
   left: 0;
   transition: opacity 450ms, visibility 250ms;
+  overflow-y: scroll;
 }
 
 /* Потрібна анімація */
 .backdrop.is-hidden .modal {
   transform: scale(1.5) rotate(-40deg) skew(30deg, 110deg);
+  overflow-y: scroll;
 }
 
 .modal {
@@ -27,7 +29,18 @@
   padding: 40px;
 
   @media screen and (min-width: 480px) {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    width: 100%;
   }
 }
 
@@ -248,7 +261,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
-    display: inline-block;
+    // display: inline-block;
     letter-spacing: 0.03em;
 
     color: #757575;
@@ -303,4 +316,16 @@
   text-decoration-line: underline;
 
   color: #2196f3;
+
+  @media screen and (min-width: 480px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    // display: inline-block;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196f3;
+  }
 }

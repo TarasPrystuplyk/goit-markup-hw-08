@@ -1,12 +1,60 @@
-.portfolio-container {
+.portfolio-section {
   @media screen and (min-width: 480px) {
     width: 480px;
     height: 100%;
-    text-align: center;
+    // text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    padding: 0;
+    padding: 60px 0;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 100%;
+    // text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding: 60px 0;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding: 0 0;
+    align-items: baseline;
+  }
+}
+
+.portfolio-container {
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     align-items: baseline;
   }
 }
@@ -21,6 +69,13 @@
     display: flex;
     flex-wrap: wrap;
     height: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
   }
 }
 
@@ -108,5 +163,10 @@
   margin-right: 8px;
   @media screen and (min-width: 480px) {
     margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 8px;
+    margin-bottom: 0;
   }
 }
