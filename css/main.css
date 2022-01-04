@@ -2164,6 +2164,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
+    margin-bottom: 40px;
   }
 }
 
@@ -2173,6 +2174,17 @@ span {
     flex-wrap: wrap;
     height: 100%;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -2257,7 +2269,6 @@ span {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
   margin-left: -30px;
 }
 
