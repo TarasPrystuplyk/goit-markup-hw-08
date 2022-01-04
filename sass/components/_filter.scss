@@ -108,6 +108,7 @@
 // }
 
 .button-primarry {
+  border: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -129,11 +130,12 @@
   &:focus {
     background-color: #2196f3;
     color: #ffffff;
-    border-radius: 4px;
+    // border-radius: 4px;
   }
 }
 
 .button-secondery {
+  border: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;

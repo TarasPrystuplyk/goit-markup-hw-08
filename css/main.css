@@ -595,6 +595,17 @@ span {
   margin-left: 40px;
 }
 
+.hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--hero-bkg-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-first-img.jpg);
+}
+
 @media screen and (max-width: 767px) {
   .hero {
     height: 400px;
@@ -2173,6 +2184,7 @@ span {
 }
 
 .button-primarry {
+  border: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -2194,10 +2206,10 @@ span {
 .button-primarry:hover, .button-primarry:focus {
   background-color: #2196f3;
   color: #ffffff;
-  border-radius: 4px;
 }
 
 .button-secondery {
+  border: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
