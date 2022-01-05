@@ -266,6 +266,18 @@
 
     color: #757575;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    // display: inline-block;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+  }
 }
 
 .modal-check-text .check-span {
@@ -323,6 +335,18 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
+    // display: inline-block;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196f3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
     // display: inline-block;
     letter-spacing: 0.03em;
     text-decoration-line: underline;

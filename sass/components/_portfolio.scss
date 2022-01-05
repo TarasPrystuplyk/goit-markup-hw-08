@@ -123,6 +123,19 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   text-align: left;
+  @media screen and (min-width: 768px) {
+    height: 146px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: auto;
+  }
 }
+
+// .project-content-tab {
+//   // @media screen and (min-width: 768px) {
+//   //   height: 113px;
+//   // }
+// }
 
 // Footer

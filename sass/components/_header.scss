@@ -338,6 +338,19 @@ span {
 
     color: #757575;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
 }
 
 .site-contact__svg {
@@ -507,9 +520,9 @@ span {
   list-style: none;
   text-align: left;
 
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 10px;
+  // }
 }
 
 .mob-menu__link {
@@ -555,6 +568,10 @@ span {
 }
 
 .mob-menu__social-link {
+  &:not(:last-child) {
+    padding-right: 0;
+    border-right: 0;
+  }
   // padding-left: 0px;
   text-decoration: none;
   text-align: center;
@@ -570,6 +587,21 @@ span {
   letter-spacing: 0.02em;
 
   color: #2196f3;
+
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+
+  @media screen and (min-width: 480px) {
+    padding: 0 10px;
+  }
+}
+
+.mob-menu__social-first {
+  padding-left: 0;
+}
+.mob-menu__social-last {
+  padding-right: 0;
+  border-right: 0;
 }
 
 .mob-menu-bottom {

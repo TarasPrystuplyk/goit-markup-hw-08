@@ -379,6 +379,19 @@ span {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .site-contact__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
 .site-contact__svg {
   width: 16px;
   height: 12px;
@@ -531,10 +544,6 @@ span {
   text-align: left;
 }
 
-.mob-menu__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .mob-menu__link {
   font-family: Roboto;
   font-style: normal;
@@ -589,6 +598,28 @@ span {
   /* identical to box height, or 122% */
   letter-spacing: 0.02em;
   color: #2196f3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.mob-menu__social-link:not(:last-child) {
+  padding-right: 0;
+  border-right: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .mob-menu__social-link {
+    padding: 0 10px;
+  }
+}
+
+.mob-menu__social-first {
+  padding-left: 0;
+}
+
+.mob-menu__social-last {
+  padding-right: 0;
+  border-right: 0;
 }
 
 .mob-menu-bottom {
@@ -1074,6 +1105,7 @@ span {
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
     color: #212121;
   }
 }
@@ -1142,6 +1174,7 @@ span {
   .team-list__item {
     width: calc(100% / 4 - 30px);
     margin-left: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -1322,7 +1355,7 @@ span {
 
 .clients-list {
   display: flex;
-  margin-right: -30px;
+  flex-wrap: wrap;
   /* padding-left: 30px; */
 }
 
@@ -1346,7 +1379,7 @@ span {
 @media screen and (min-width: 1200px) {
   .clients-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
@@ -1365,16 +1398,16 @@ span {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .clients-list__client-item {
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .clients-list__client-item {
-    width: calc((100% - 3 * 30px) / 3);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
@@ -1396,6 +1429,12 @@ span {
 .clients-list__link:hover, .clients-list__link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__link {
+    width: 170px;
+  }
 }
 
 .clients-list__svg {
@@ -1563,8 +1602,8 @@ span {
 
 @media screen and (max-width: 767px) {
   .footer-social {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1637,7 +1676,13 @@ span {
   /* border-radius: 50%; */
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .footer__form {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer__form {
     margin-top: 60px;
     text-align: center;
@@ -2030,6 +2075,18 @@ span {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-check-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
+
 .modal-check-text .check-span {
   width: 16px;
   height: 15px;
@@ -2085,6 +2142,19 @@ span {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .policy-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: #2196f3;
@@ -2258,6 +2328,12 @@ span {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .btn-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .btn-item:not(:last-child) {
     margin-right: 8px;
@@ -2388,5 +2464,17 @@ span {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .project-content {
+    height: 146px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-content {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
