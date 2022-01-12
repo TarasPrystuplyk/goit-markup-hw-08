@@ -2379,6 +2379,7 @@ span {
 
 .filter-item-last {
   margin-bottom: 0;
+  margin-left: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2396,6 +2397,10 @@ span {
 }
 
 .filter-item:hover .textonly {
+  transform: translateY(0);
+}
+
+.filter-item-last:hover .textonly {
   transform: translateY(0);
 }
 

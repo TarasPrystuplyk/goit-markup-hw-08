@@ -36,6 +36,7 @@
 
 .filter-item-last {
   margin-bottom: 0;
+  margin-left: 30px;
 }
 
 .portfolio-img {
@@ -59,6 +60,10 @@
 // }
 
 .filter-item:hover .textonly {
+  transform: translateY(0);
+}
+
+.filter-item-last:hover .textonly {
   transform: translateY(0);
 }
 
